@@ -1,0 +1,39 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Project" parallel="false" thread-count="3">
+<!--    <listeners>-->
+<!--        <listener class-name="utilities.Reporting"/>-->
+<!--    </listeners>-->
+    <parameter name="baseURL" value="https://katalon-demo-cura.herokuapp.com/"/>
+    <test name="Run in Chrome Browser">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="TestCases.TC_TestCaseHome"/>
+                <class name="TestCases.TC_Login"/>
+                <!--                <class name="testCases.TC_TestCasePlatform_001"/>-->
+                <!--                <class name="testCases.TC_TestCaseUseCases_002"/>-->
+                <!--                <class name="testCases.TC_TestCaseContactUs_003"/>-->
+            </classes>
+        </parameter>
+    </test>
+<!--    <test name="Run in Firefox Browser">-->
+<!--        <parameter name="browser" value="firefox">-->
+<!--            <classes>-->
+<!--                <class name="testCases.TC_TestCaseHomePage_000"/>-->
+<!--                &lt;!&ndash;                <class name="testCases.TC_TestCasePlatform_001"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <class name="testCases.TC_TestCaseUseCases_002"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <class name="testCases.TC_TestCaseContactUs_003"/>&ndash;&gt;-->
+<!--            </classes>-->
+<!--        </parameter>-->
+<!--    </test>-->
+<!--    <test name="Run in IE Browser">-->
+<!--        <parameter name="browser" value="ie">-->
+<!--            <classes>-->
+<!--                <class name="testCases.TC_TestCaseHomePage_000"/>-->
+<!--                &lt;!&ndash;                <class name="testCases.TC_TestCasePlatform_001"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <class name="testCases.TC_TestCaseUseCases_002"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <class name="testCases.TC_TestCaseContactUs_003"/>&ndash;&gt;-->
+<!--            </classes>-->
+<!--        </parameter>-->
+<!--    </test>-->
+</suite>
