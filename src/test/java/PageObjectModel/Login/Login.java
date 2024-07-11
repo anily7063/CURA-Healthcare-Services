@@ -23,15 +23,19 @@ WebElement errorMessageForInvalidUserNameOrPassword;
         PageFactory.initElements(driver,this);
     }
 public void clickMakeAppointment(){
+
         makeMyAppointment.click();
 }
 public void enterUsername(String username){
+
         userName.sendKeys(username);
 }
 public void enterPassword(String strPassword){
+
         password.sendKeys(strPassword);
 }
 public void clickLogin(){
+
         loginBtn.click();
 }
 public void verifyErrorMessage(String expectedMsg){
